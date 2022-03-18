@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="?android:attr/selectableItemBackground"
+    android:paddingBottom="10sp"
+    android:paddingLeft="16sp"
+    android:paddingRight="16sp"
+    android:paddingTop="10sp" >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="138dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="121dp">
+
+            <ImageView
+                android:id="@+id/tImg"
+                android:layout_width="118dp"
+                android:layout_height="88dp"
+                android:layout_marginStart="40dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.515"
+                app:srcCompat="@drawable/ic_launcher_foreground"
+                tools:ignore="ImageContrastCheck" />
+
+            <TextView
+                android:id="@+id/tTitle"
+                android:layout_width="146dp"
+                android:layout_height="68dp"
+                android:layout_marginStart="28dp"
+                android:text="TextView"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tImg"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.32"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="16dp"
+                android:layout_height="54dp"
+                android:layout_marginStart="12dp"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:text=">"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.603"
+                app:layout_constraintStart_toEndOf="@+id/tTitle"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

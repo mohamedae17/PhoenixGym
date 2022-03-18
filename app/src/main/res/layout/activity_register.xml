@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Views.Register">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="235dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="Register"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/regFirst"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/regFirst"
+        android:layout_width="271dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:hint="First name"
+        android:inputType="textPersonName"
+        app:circularflow_radiusInDP="regFirstname"
+        app:layout_constraintBottom_toTopOf="@+id/regLast"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/regLast"
+        android:layout_width="273dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:hint="Last ame"
+        android:inputType="textPersonName"
+        app:circularflow_radiusInDP="regLastname"
+        app:layout_constraintBottom_toTopOf="@+id/regUsename"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/regAge"
+        android:layout_width="276dp"
+        android:layout_height="38dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:hint="Age"
+        android:inputType="number"
+        android:maxLength="2"
+        app:circularflow_radiusInDP="regAge"
+        app:layout_constraintBottom_toTopOf="@+id/regWeight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/regWeight"
+        android:layout_width="271dp"
+        android:layout_height="38dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:hint="Weight"
+        android:inputType="number"
+        app:circularflow_radiusInDP="regWeight"
+        app:layout_constraintBottom_toTopOf="@+id/regPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.464"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/regUsename"
+        android:layout_width="273dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        app:circularflow_radiusInDP="regUsername"
+        app:layout_constraintBottom_toTopOf="@+id/regAge"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/regGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:ems="10"
+        android:hint="Gender"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/rBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/regPassword"
+        android:layout_width="269dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="32dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword "
+        app:layout_constraintBottom_toTopOf="@+id/regGender"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.471"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/rBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="56dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@android:drawable/ic_input_add" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
